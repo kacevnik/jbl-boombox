@@ -1,0 +1,64 @@
+.StartPage {
+    background: #FFFF99;
+}
+.start-bg-left {
+    background: url(img/start-bg-left.svg)no-repeat left center;
+    background-size: contain;
+}
+.start-bg-right {
+    background: url(img/start-bg-right.svg)no-repeat right center;
+    background-size: contain;
+}
+.start-bg-center {
+    background: url(img/start-bg-center.png)no-repeat;
+    background-size: 73%;
+    background-position-x: 50%;
+}
+.start-content-top {
+    font-size: 3.2em;
+    display: flex;
+    align-items: center;
+    color: #808284;
+}
+
+.start-content-top span {
+    display: inline-block;
+    margin: 0 40px 0 0;
+}
+
+.start-content {
+    width: 28%;
+    position: absolute;
+    left: 57%;
+    top: 13%;
+}
+.start-content h1 {
+    font-size: 6.3em;
+}
+
+.start-content p {
+    color: #808284;
+    font-size: 2.3em;
+}
+.start-content p a {
+    color: #FF3300;
+    text-decoration: none;
+}
+.start-content p a:hover {
+    color: #FF3300;
+    text-decoration: underline;
+}
+.start-content .app-btn {
+    cursor: pointer;
+    background: #FF3300;
+    display: inline-block;
+    color: #fff;
+    padding: 1.5em 13em;
+    transition: .3s ease;
+}
+.start-content .app-btn:hover {
+    background: #000;
+}
+.start-content .app-btn > span {
+    font-size: 3.2em;
+}

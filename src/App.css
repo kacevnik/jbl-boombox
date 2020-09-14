@@ -1,0 +1,15 @@
+.app-container {
+  position: relative;
+  height: 95em;
+  width: 169em;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.StartPage, .Level1 {
+  display: none;
+}
+
+.start .StartPage, .level-1 .Level1 {
+  display: block;
+}

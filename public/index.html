@@ -1,43 +1,487 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title></title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/public/favicon/favicon-16x16.png">
+    <link rel="manifest"
+        href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/public/favicon/site.webmanifest">
+    <link rel="mask-icon"
+        href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/public/favicon/safari-pinned-tab.svg"
+        color="#603cba">
+    <link rel="shortcut icon"
+        href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/public/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config"
+        content="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/public/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://mc.yandex.ru/metrika/tag.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MPBPZL6"></script>
+    <meta name="description"
+        content="">
+
+    <meta name="keywords" content="">
+    <link rel="canonical" href="" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://medialeaks.ru/vecherinka_s_JBL/" />
+    <meta property="og:image" content="https://medialeaks.ru/wp-content/uploads/2014/03/jbl-anons.jpg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:site_name" content="MediaLeaks" />
+    <meta property="og:description" content="" />
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//s.w.org">
+
+    <link rel="stylesheet" id="css-bundle-css"
+        href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/bundle.css?ver=376" type="text/css"
+        media="all">
+    <script>
+
+        if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+            document.addEventListener('touchmove', function (event) {
+                if (event.scale !== 1) { event.preventDefault(); }
+            }, { passive: false });
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="header" class="header">
+            <div class="container header__container">
+                <div class="header__section_mobile-button">
+                    <button id="headerMobileMenuButton" type="button" class="header__mobile-menu-button">
+                        <svg id="headerMobileMenuOpen" class="header__mobile-menu-button_open active">
+                            <use
+                                xlink:href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/sprite.svg#mobile-menu-open">
+                            </use>
+                        </svg>
+                        <svg id="headerMobileMenuClose" class="header__mobile-menu-button_close">
+                            <use
+                                xlink:href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/sprite.svg#mobile-menu-close">
+                            </use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header__section_logo">
+                    <a href="/" class="logo">
+                        <img width="141"
+                            src="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/public/img/logo.svg"
+                            alt="Medialeaks">
+                    </a>
+                </div>
+                <div class="header__section_navigation">
+                    <ul id="menu-verhnee-menyu-2019" class="header__navigation-component">
+                        <li id="menu-item-214090"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-214090">
+                            <a href="/latest/">Истории</a>
+                        </li>
+                        <li id="menu-item-214091"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214091">
+                            <a href="https://medialeaks.ru/top/">Популярное</a>
+                        </li>
+                        <li id="menu-item-214116"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-214116">
+                            <a href="https://medialeaks.ru/category/themes/">Темы</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-214093"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214093">
+                                    <a href="https://medialeaks.ru/category/themes/budushhee/">Будущее</a>
+                                </li>
+                                <li id="menu-item-214094"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214094">
+                                    <a href="https://medialeaks.ru/category/themes/internet/">Интернет</a>
+                                </li>
+                                <li id="menu-item-214095"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214095">
+                                    <a href="https://medialeaks.ru/category/themes/kosmos/">Космос</a>
+                                </li>
+                                <li id="menu-item-214096"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214096">
+                                    <a href="https://medialeaks.ru/category/themes/texnologii/">Технологии</a>
+                                </li>
+                                <li id="menu-item-214097"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214097">
+                                    <a href="https://medialeaks.ru/category/themes/trends/">Тренды</a>
+                                </li>
+                                <li id="menu-item-214098"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214098">
+                                    <a href="https://medialeaks.ru/category/themes/video/">Видео</a>
+                                </li>
+                                <li id="menu-item-214099"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214099">
+                                    <a href="https://medialeaks.ru/category/themes/zhizn/">Жизнь</a>
+                                </li>
+                                <li id="menu-item-214100"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214100">
+                                    <a href="https://medialeaks.ru/category/themes/zhivotnye/">Животные</a>
+                                </li>
+                                <li id="menu-item-214101"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214101">
+                                    <a href="https://medialeaks.ru/category/themes/zdorove/">Здоровье</a>
+                                </li>
+                                <li id="menu-item-214102"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214102">
+                                    <a href="https://medialeaks.ru/category/themes/otnosheniya/">Отношения</a>
+                                </li>
+                                <li id="menu-item-214103"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214103">
+                                    <a href="https://medialeaks.ru/category/themes/politika-i-proisshestviya/">Политика
+                                        и происшествия</a>
+                                </li>
+                                <li id="menu-item-214104"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214104">
+                                    <a href="https://medialeaks.ru/category/themes/puteshestviya/">Путешествия</a>
+                                </li>
+                                <li id="menu-item-214105"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214105">
+                                    <a href="https://medialeaks.ru/category/themes/semya/">Семья</a>
+                                </li>
+                                <li id="menu-item-214109"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214109">
+                                    <a href="https://medialeaks.ru/category/themes/entertainment/">Развлечения</a>
+                                </li>
+                                <li id="menu-item-214111"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214111">
+                                    <a href="https://medialeaks.ru/category/themes/znamenitosti/">Знаменитости</a>
+                                </li>
+                                <li id="menu-item-214112"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214112">
+                                    <a href="https://medialeaks.ru/category/themes/kino-i-igryi/">Кино и игры</a>
+                                </li>
+                                <li id="menu-item-214113"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214113">
+                                    <a href="https://medialeaks.ru/category/themes/sotsseti-i-blogeryi/">Соцсети и
+                                        блогеры</a>
+                                </li>
+                                <li id="menu-item-214115"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214115">
+                                    <a href="https://medialeaks.ru/category/themes/shoping/">Шопинг</a>
+                                </li>
+                                <li id="menu-item-219501"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-219501">
+                                    <a href="https://medialeaks.ru/category/themes/promo/">Партнерский</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__section_right">
+                    <div id="headerSectionSocial" class="header__section_social">
+                        <a href="https://vk.com/medialeaksru" target="_blank"
+                            class="social-links__link social-links__link_vk">
+                            <svg class="social-links__icon_vk">
+                                <use
+                                    xlink:href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/sprite.svg#vk">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/medialeaksru" target="_blank"
+                            class="social-links__link social-links__link_facebook">
+                            <svg class="social-links__icon_facebook">
+                                <use
+                                    xlink:href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/sprite.svg#facebook">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="https://tlg.name/medialeaks" target="_blank"
+                            class="social-links__link social-links__link_telegram">
+                            <svg class="social-links__icon_telegram">
+                                <use
+                                    xlink:href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/sprite.svg#telegram">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="https://zen.yandex.ru/medialeaks.ru" target="_blank"
+                            class="social-links__link social-links__link_zen">
+                            <span class="social-links__icon_zen">
+                                <img width="6" height="16"
+                                    src="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/public/img/zen.svg"
+                                    alt="yandex zen">
+                            </span>
+                        </a>
+                        <a href="https://twitter.com/MedialeaksRu" target="_blank"
+                            class="social-links__link social-links__link_twitter">
+                            <svg class="social-links__icon_twitter">
+                                <use
+                                    xlink:href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/sprite.svg#twitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__section_search">
+                        <button id="headerSearchButton" type="button" class="header__search-button">
+                            <svg id="headerSearchIcon" class="header__search-icon active">
+                                <use
+                                    xlink:href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/sprite.svg#search">
+                                </use>
+                            </svg>
+                            <svg id="headerSearchIconClose" class="header__search-icon_close">
+                                <use
+                                    xlink:href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/sprite.svg#mobile-menu-close">
+                                </use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MobileMenu -->
+        <div id="headerMobileMenu" class="header__mobile-menu">
+            <div style="overflow-y: scroll; max-height: 83vh;">
+                <div class="header__mobile-menu-top">
+                    <ul id="menu-verhnee-menyu-2020" class="header__mobile-menu-items">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-214089">
+                            <a href="/news/">Новости</a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-214090">
+                            <a href="/latest/">Истории</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214091">
+                            <a href="https://medialeaks.ru/top/">Популярное</a>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-214116">
+                            <a href="https://medialeaks.ru/category/themes/">Темы</a>
+                            <button class="header__mobile-submenu-button">
+                                <svg class="header__mobile-submenu-button_icon">
+                                    <use
+                                        xlink:href="/wp-content/themes/medialeaks_2k19/assets/build/sprite.svg#arrow-down">
+                                    </use>
+                                </svg>
+                            </button>
+                            <ul class="header__mobile-submenu-container">
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214093">
+                                    <a href="https://medialeaks.ru/category/themes/budushhee/">Будущее</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214094">
+                                    <a href="https://medialeaks.ru/category/themes/internet/">Интернет</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214095">
+                                    <a href="https://medialeaks.ru/category/themes/kosmos/">Космос</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214096">
+                                    <a href="https://medialeaks.ru/category/themes/texnologii/">Технологии</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214097">
+                                    <a href="https://medialeaks.ru/category/themes/trends/">Тренды</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214098">
+                                    <a href="https://medialeaks.ru/category/themes/video/">Видео</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214099">
+                                    <a href="https://medialeaks.ru/category/themes/zhizn/">Жизнь</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214100">
+                                    <a href="https://medialeaks.ru/category/themes/zhivotnye/">Животные</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214101">
+                                    <a href="https://medialeaks.ru/category/themes/zdorove/">Здоровье</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214102">
+                                    <a href="https://medialeaks.ru/category/themes/otnosheniya/">Отношения</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214103">
+                                    <a href="https://medialeaks.ru/category/themes/politika-i-proisshestviya/">Политика
+                                        и происшествия</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214104">
+                                    <a href="https://medialeaks.ru/category/themes/puteshestviya/">Путешествия</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214105">
+                                    <a href="https://medialeaks.ru/category/themes/semya/">Семья</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214109">
+                                    <a href="https://medialeaks.ru/category/themes/entertainment/">Развлечения</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214111">
+                                    <a href="https://medialeaks.ru/category/themes/znamenitosti/">Знаменитости</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214112">
+                                    <a href="https://medialeaks.ru/category/themes/kino-i-igryi/">Кино и игры</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214113">
+                                    <a href="https://medialeaks.ru/category/themes/sotsseti-i-blogeryi/">Соцсети и
+                                        блогеры</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-214115">
+                                    <a href="https://medialeaks.ru/category/themes/shoping/">Шопинг</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-219501">
+                                    <a href="https://medialeaks.ru/category/themes/promo/">Партнерский</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__mobile-menu-bottom">
+                    <ul id="menu-header-mobile-items" class="header__mobile-submenu">
+                        <li id="menu-item-147343"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147343">
+                            <a href="https://medialeaks.ru/kontaktyi/">Адрес редакции</a>
+                        </li>
+                        <li id="menu-item-151079"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151079">
+                            <a href="https://medialeaks.ru/about/">О проекте</a>
+                        </li>
+                        <li id="menu-item-147344"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147344">
+                            <a href="https://medialeaks.ru/vakansii/">Вакансии</a>
+                        </li>
+                        <li id="menu-item-147347"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147347">
+                            <a href="https://medialeaks.ru/reklama/">Рекламный отдел</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- headerSearchForm -->
+        <form class="header__search-form" role="search" method="get" id="searchform" action="/">
+            <div class="container header__container">
+                <input class="header__search-input" type="text" value="" placeholder="Поиск" name="s" id="s">
+                <button class="header__search-clear" type="button">
+                    <svg class="header__search-icon_close">
+                        <use
+                            xlink:href="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/sprite.svg#mobile-menu-close">
+                        </use>
+                    </svg>
+                </button>
+                <button type="submit" class="button_main header__search-submit">Найти</button>
+            </div>
+        </form>
+    </header>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <footer>
+        <div class="container">
+            <div class="footer__section_top">
+                <p class="footer__navigation-title">Редакция</p>
+                <p class="footer__navigation-title">Реклама на сайте</p>
+                <p class="footer__navigation-title">Мы в соцсетях</p>
+            </div>
+            <div class="footer__section_bottom">
+                <div class="footer__section_navigation">
+                    <ul class="footer__navigation-items">
+                        <li id="menu-item-116276"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-116276"><a
+                                href="https://medialeaks.ru/kontaktyi/">Адрес редакции</a></li>
+                        <li id="menu-item-116277"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-116277"><a
+                                href="https://medialeaks.ru/about/">О проекте</a></li>
+                        <li id="menu-item-149691"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149691"><a
+                                href="https://medialeaks.ru/vakansii/">Вакансии</a></li>
+                        <li id="menu-item-116278"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116278"><a
+                                href="mailto:formedialeaks@gmail.com">Напишите нам</a></li>
+                    </ul>
+                    <ul class="footer__navigation-items">
+                        <li id="menu-item-116281"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116281"><a
+                                target="_blank" href="https://medialeaks.ru/mediakit201910.pdf">Медиакит</a></li>
+                        <li id="menu-item-116283"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-116283"><a
+                                href="https://medialeaks.ru/reklama/">Кейсы</a></li>
+                        <li id="menu-item-196575"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-196575"><a
+                                href="https://medialeaks.ru/brif/">Заполнить бриф</a></li>
+                    </ul>
+                    <ul class="footer__navigation-items">
+                        <li id="menu-item-116285"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116285"><a
+                                target="_blank" href="https://vk.com/medialeaksru">ВКонтакте</a></li>
+                        <li id="menu-item-116287"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116287"><a
+                                target="_blank" href="http://www.facebook.com/medialeaksru">Фейсбук</a></li>
+                        <li id="menu-item-116288"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116288"><a
+                                target="_blank" href="http://ok.ru/medialeaks">Одноклассники</a></li>
+                        <li id="menu-item-116289"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116289"><a
+                                target="_blank" href="https://twitter.com/MedialeaksRu">Твиттер</a></li>
+                        <li id="menu-item-116290"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116290"><a
+                                target="_blank"
+                                href="https://tele.gg/joinchat/AAAAAD5GWCshtTYAeT6tCg">Телеграм-канал</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section_copyright">
+                    <p class="footer__text footer__text_copyright">© Medialeaks, 2020</p>
+                    <p class="footer__text">При использовании материалов Медиаликс обязательно упоминание и гиперссылка.
+                    </p>
+                    <p class="footer__text">Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите
+                        Ctrl+Enter.</p>
+                    <p class="footer__text">18+</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?ver=1.3.2"></script>
+    <script async src="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/header.js"></script>
+    <script
+        src="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/src/components/load-more/load-more.js?ver=376"></script>
+    <script src="https://medialeaks.ru/wp-content/themes/medialeaks_2k19/assets/build/bundle.js?ver=376"></script>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MPBPZL6');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPBPZL6" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- Yandex.Metrika counter -->
+    <script
+        type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(22455712, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true }); </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/22455712" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</body>
+
 </html>
