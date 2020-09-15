@@ -9,7 +9,6 @@ function App() {
   const getRem = () => {
     if (window.innerWidth < window.innerHeight && window.innerWidth < 768) {
       setMobile(true)
-      return window.innerWidth / 37.5
     } else {
       setMobile(false)
     }
@@ -23,6 +22,7 @@ function App() {
 
   const [rem, setRem] = useState(getRem)
   const [level, setLevel] = useState(0)
+  const [overloy, setOverloy] = useState(false)
 
   window.addEventListener("resize", () => {
     setRem(getRem)
@@ -34,14 +34,30 @@ function App() {
   const changeLevel = () => {
     let newLevel = level + 1;
     setLevel(newLevel);
+    if (newLevel === 1) {
+      setOverloy(true);
+    }
+  }
+
+  const hideOverloy = () => {
+    console.log(1)
+    setOverloy(false);
+  }
+
+  if ( mobile )  {
+    classApp.push('amobile')
+  }
+
+  if ( overloy )  {
+    classApp.push('overloyshow')
   }
 
   return (
     <Context.Provider value={{
-      changeLevel
+      changeLevel, hideOverloy
     }}>
     <div className={classApp.join(' ')} style={{fontSize: rem + 'px'}}>
-      <Canvas rem={rem} />
+      <Canvas rem={rem} mobile={mobile}/>
     </div>
     </Context.Provider>
   );

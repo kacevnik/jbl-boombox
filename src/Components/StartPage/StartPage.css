@@ -15,7 +15,6 @@
     background-position-x: 50%;
 }
 .start-content-top {
-    font-size: 3.2em;
     display: flex;
     align-items: center;
     color: #808284;
@@ -23,22 +22,34 @@
 
 .start-content-top span {
     display: inline-block;
-    margin: 0 40px 0 0;
+    font-family: 'Avant';
+    font-size: 3.2em;
+}
+
+.start-content-top img {
+    width: 4em;
+    margin: 0 0 0 4em;
 }
 
 .start-content {
     width: 28%;
     position: absolute;
-    left: 57%;
-    top: 13%;
+    left: 56.3%;
+    top: 14%;
 }
 .start-content h1 {
-    font-size: 6.3em;
+    font-size: 5.3em;
+    font-family: 'Avant';
 }
 
 .start-content p {
     color: #808284;
-    font-size: 2.3em;
+    padding: 2em 0;
+    line-height: 3.1em;
+}
+
+.start-content p > span {
+    font-size: 2.1em;
 }
 .start-content p a {
     color: #FF3300;
@@ -61,4 +72,5 @@
 }
 .start-content .app-btn > span {
     font-size: 3.2em;
+    font-family: 'Avant';
 }

@@ -5,15 +5,17 @@ import './StartPage.css'
 
 import logo from '../../img/logo.svg'
 
-function StartPage({rem}) {
+function StartPage({rem, mobile}) {
 
     const { changeLevel } = useContext(Context);
     const [bp1, setBp1] = useState('left, center')
     const [bp2, setBp2] = useState('right, center')
 
     const paralax = (e) => {
-        setBp1((e.pageX * -1 / 100) + 'px ' + (e.pageY * -1 / 100 +5 ) + 'px');
-        setBp2((e.pageX * -1 / 100 + (rem * 159)) + 'px ' + (e.pageY * -1 / 100 +5 ) + 'px');
+        if (!mobile){
+            setBp1((e.pageX * -1 / 100) + 'px ' + (e.pageY * -1 / 100 +5 ) + 'px');
+            setBp2((e.pageX * -1 / 100 + (rem * 159)) + 'px ' + (e.pageY * -1 / 100 +5 ) + 'px');
+        }
     }
 
     return (
