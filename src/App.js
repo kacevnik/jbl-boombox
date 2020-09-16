@@ -9,6 +9,7 @@ function App() {
   const getRem = () => {
     if (window.innerWidth < window.innerHeight && window.innerWidth < 768) {
       setMobile(true)
+      return window.innerWidth / 32
     } else {
       setMobile(false)
     }

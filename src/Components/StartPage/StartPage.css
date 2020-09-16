@@ -14,6 +14,19 @@
     background-size: 73%;
     background-position-x: 50%;
 }
+.amobile .StartPage .start-bg-left {
+    background: none;
+}
+.amobile .StartPage .start-bg-right {
+    background: url(img/start-mobile-bg.png)no-repeat;
+    background-size: cover;
+}
+.amobile .StartPage .start-bg-center {
+    background: url(img/start-mobile-boll.png)no-repeat;
+    background-size: 184%;
+    background-position: 55% 15%;
+    padding: 0 0 3em 0;
+}
 .start-content-top {
     display: flex;
     align-items: center;
@@ -25,9 +38,17 @@
     font-family: 'Avant';
     font-size: 3.2em;
 }
+.amobile .start-content-top span {
+    font-size: 2.4em;
+}
 
 .start-content-top img {
     width: 4em;
+    margin: 0 0 0 4em;
+}
+
+.amobile .start-content-top img {
+    width: 5.3em;
     margin: 0 0 0 4em;
 }
 
@@ -37,9 +58,21 @@
     left: 56.3%;
     top: 14%;
 }
-.start-content h1 {
+.amobile .start-content {
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 5em;
+}
+.start-content h1 span {
     font-size: 5.3em;
     font-family: 'Avant';
+}
+.amobile .start-content h1 {
+    line-height: 4.7em;
+}
+.amobile .start-content h1 span {
+    font-size: 3.7em;
 }
 
 .start-content p {
@@ -48,8 +81,16 @@
     line-height: 3.1em;
 }
 
+.amobile .start-content p {
+    padding: 1em 0;
+    line-height: 2.2em;
+}
+
 .start-content p > span {
     font-size: 2.1em;
+}
+.amobile .start-content p > span {
+    font-size: 1.6em;
 }
 .start-content p a {
     color: #FF3300;
@@ -67,10 +108,24 @@
     padding: 1.5em 13em;
     transition: .3s ease;
 }
+.amobile .start-content .app-btn {
+    padding: 0;
+    transition: .3s ease;
+    margin: 0.5em auto;
+    display: flex;
+    text-align: center;
+    width: 20.8em;
+    height: 4.7em;
+    align-items: center;
+    justify-content: center;
+}
 .start-content .app-btn:hover {
     background: #000;
 }
 .start-content .app-btn > span {
     font-size: 3.2em;
     font-family: 'Avant';
+}
+.amobile .start-content .app-btn > span {
+    font-size: 2.6em;
 }

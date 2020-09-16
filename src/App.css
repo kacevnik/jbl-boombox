@@ -21,7 +21,15 @@
   height: 95em;
   width: 169em;
   margin: 0 auto;
-  border: 1px solid #ccc;
+}
+.amobile .app-container {
+  height: auto;
+}
+.amobile.start .app-container {
+  position: relative;
+  height: 100%;
+  width: 30em;
+  margin: 0 auto;
 }
 
 .StartPage, .Level1 {

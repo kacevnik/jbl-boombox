@@ -29,7 +29,7 @@ function StartPage({rem, mobile}) {
                                     <span>Игра</span>
                                     <img src={logo} alt="JBL" />
                                 </div>
-                                <h1><spna>Заряди жизнь музыкой!</spna></h1>
+                                <h1><span>Заряди жизнь музыкой!</span></h1>
                                 <p>
                                     <span>
                                     Сейчас у каждого из нас в смартфоне целая музыкальная вселенная. Но с помощью одного только телефона настоящий праздник не устроить! Вместе с JBL, представившим новинку <a href="https://harman.club/jblboombox2blkeu-jbl-boombox-2?utm_source=google&utm_medium=cpc&utm_campaign=krg_po_modelyam_rf_poisk&utm_content=ch_google_adwords%7Ctrg_kwd-447774786368%7Ccrt_449246756078%7Ckwmt_b%7Cps_%7Csrct_g%7Ctrgt_%7Csrc_%7Cdevt_c%7Cdevm_%7Ccid_10202635645%7Clcl_9047022%7Cfdi_%7Cmrlid_13813%7Cdop_&utm_term=%2Bjbl%20%2Bboombox%20%2B2&gclid=EAIaIQobChMIzoCQvffo6wIVmqiyCh0PUAEXEAAYASAAEgLaBvD_BwE" target="blank">JBL Boombox 2</a> — беспроводную акустическую систему с мощным звуком и взрывными басами, мы предлагаем тебе отправиться в идеальное музыкальное приключение. Найди все части устройства в нашей игре, а мы расскажем, как бумбокс помогает задать настроение любому мероприятию!
