@@ -17,6 +17,13 @@
     cursor: default;
 }
 
+.overloyshow .Overloy .overloy-message {
+    display: block;
+}
+.overloyshow.amobile .Overloy .overloy-message {
+    display: none;
+}
+
 .overloy-message {
     background: url(./img/overloy-bg.png)no-repeat;
     position: absolute;
@@ -27,4 +34,5 @@
     left: 50%;
     cursor: pointer;
     transform: translate(-50%, -50%);
+    display: none;
 }
