@@ -7,12 +7,12 @@ import StartPage from '../StartPage/StartPage'
 
 import './Canvas.css'
 
-function Canvas({rem, mobile}) {
+function Canvas({rem, mobile, text}) {
     return (
         <div className="Canvas">
             <StartPage rem={rem} mobile={mobile}/>
             <MobileTurn />
-            <Overloy />
+            <Overloy text={text} />
             <Level1 />
         </div>
     )

@@ -17,8 +17,14 @@ function App() {
   }
 
   const levels = [
-    'start',
-    'level-1'
+    {
+      name: 'start',
+      mess: {__html: ''}
+    },
+    {
+      name: 'level-1',
+      mess: {__html: '<div class="title"><span>Что способно вдохновлять на спортивные достижения так же, как музыка?</span></div><div class="desc"><span>Включаешь любимый трек — и вот ты уже наделен невероятной мотивацией на любые свершения! <strong>Найди</strong> на площадке для воркаута <strong>пассивные излучатели от JBL Boombox 2.</strong></span></div>'}
+    },
   ]
 
   const [rem, setRem] = useState(getRem)
@@ -30,7 +36,7 @@ function App() {
   })
 
   let classApp = ['App']
-  classApp.push(levels[level])
+  classApp.push(levels[level].name)
 
   const changeLevel = () => {
     let newLevel = level + 1;
@@ -41,7 +47,6 @@ function App() {
   }
 
   const hideOverloy = () => {
-    console.log(1)
     setOverloy(false);
   }
 
@@ -58,7 +63,7 @@ function App() {
       changeLevel, hideOverloy
     }}>
     <div className={classApp.join(' ')} style={{fontSize: rem + 'px'}}>
-      <Canvas rem={rem} mobile={mobile}/>
+      <Canvas rem={rem} mobile={mobile} text={levels[level].mess}/>
     </div>
     </Context.Provider>
   );
