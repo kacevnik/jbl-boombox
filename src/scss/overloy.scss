@@ -9,7 +9,11 @@
     z-index: 100;
 }
 
-.Overloy .overloy-message {
+.amobile.overloaded .Overloy .overloy-message {
+    display: none;
+}
+
+.overloaded .overloy-message {
     display: block;
 }
 
@@ -28,6 +32,10 @@
 
 .overloy-message-wrap {
     padding: 11.7em 17em 4em;
+}
+
+.level2 .overloy-message-wrap {
+    padding: 11.7em 14em 4em;
 }
 
 .overloy-message-wrap .title{
@@ -61,10 +69,18 @@
     }
     .overloy-message-wrap {
         font-size: 5px;
-        padding: 0 12em 0;
+        padding: 0;
         height: 100%;
         display: flex;
         align-items: center;
+    }
+
+    .level2 .overloy-message-wrap {
+        padding: 0;
+    }
+
+    .overloy-message-wrap > div {
+        padding: 0 14em;
     }
 
     .overloy-message-wrap .title{

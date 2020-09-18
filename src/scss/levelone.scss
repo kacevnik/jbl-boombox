@@ -3,11 +3,41 @@
     background-size: contain;
 
     .app-container {
-        cursor: url('../img/cursor.png'), pointer;
+        cursor: none;
     }
-}
 
-.f-bg {
-    background: url(../img/ob.png)no-repeat;
-    background-size: contain;
+    #search-1 {
+        position: absolute;
+        left: 56.3%;
+        top: 63.5%;
+        width: 2.5em;
+        height: 4.7em;
+        display: none;
+        &.searched {
+            filter: drop-shadow(0 0 7px #FFF);
+            z-index: 200;
+        }
+    }
+
+    #boombox-1 {
+        display: none;
+        width: 31em;
+        position: absolute;
+        right: 0;
+        top: 5em;
+    }
+    #boombox-2 {
+        z-index: 200;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 5em;
+        width: 35.3em;
+    }
+
+    .f-bg {
+        background: url(../img/ob.png)no-repeat;
+        background-size: contain;
+    }
+
 }

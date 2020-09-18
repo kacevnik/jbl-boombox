@@ -1,0 +1,31 @@
+.game-buttons {
+    display: flex;
+    position: absolute;
+    bottom: 1em;
+    right: 1.5em;
+    flex-direction: column;
+
+    span {
+        width: 9em;
+        height: 9em;
+        display: inline-block;
+
+        &#vopros {
+            background: url(../img/vopros.png)no-repeat;
+            margin: 0 0 1.5em;
+            background-size: contain;
+            cursor: pointer;
+        }
+
+        &#next-level {
+            background: url(../img/bg-next-empty.png)no-repeat;
+            background-size: contain;
+
+            &.next {
+                background: url(../img/bg-next.png)no-repeat;
+                background-size: contain;
+                cursor: pointer;
+            }
+        }
+    }
+}

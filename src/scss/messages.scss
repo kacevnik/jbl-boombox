@@ -1,0 +1,52 @@
+.messages{
+    display: none;
+    background: #fff;
+    position: absolute;
+    z-index: 201;
+    border: 1px solid #FF4713;
+    padding: 4em;
+    width: 52.7em;
+
+    .title {
+        line-height: 3.3em;
+        padding: 0 0 1em 0;
+        @media(max-width: 786px) {
+            line-height: 4.3em;
+            padding: 0 0 3em;
+        }
+
+        span {
+            font-size: 2.2em;
+            font-weight: 600;
+            @media(max-width: 786px) {
+                font-size: 5.2em;
+            }
+        }
+    }
+
+    .desc {
+        line-height: 3.1em;
+        color: #808284;
+        @media(max-width: 786px) {
+            line-height: 6.1em;
+        }
+
+        span {
+            font-size: 1.8em;
+            @media(max-width: 786px) {
+                font-size: 3.8em;
+            }
+        }
+    }
+
+    &#mess-1 {
+        left: 64%;
+        top: 52%;
+        @media(max-width: 786px) {
+            left: 0;
+            top: 0;
+            padding: 6em;
+            width: 97.7em;
+        }
+    }
+}
