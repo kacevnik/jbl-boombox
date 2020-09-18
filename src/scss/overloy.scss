@@ -1,0 +1,91 @@
+.Overloy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .65);
+    transition: ease .3s all;
+    z-index: 100;
+}
+
+.Overloy .overloy-message {
+    display: block;
+}
+
+.overloy-message {
+    background: url(../img/overloy-bg.png)no-repeat;
+    position: absolute;
+    width: 75.7em;
+    height: 50.2em;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.overloy-message-wrap {
+    padding: 11.7em 17em 4em;
+}
+
+.overloy-message-wrap .title{
+    font-weight: 600;
+    line-height: 3.3em;
+    margin: 0 0 2.5em;
+    font-family: 'Avant';
+}
+
+.overloy-message-wrap .title span {
+    font-size: 2.2em;
+}
+
+.overloy-message-wrap .desc {
+    line-height: 3.1em;
+    color: #808284;
+}
+
+.overloy-message-wrap .desc span {
+    font-size: 1.6em;
+}
+
+.overloy-message-wrap .desc span strong {
+    color: #FF2A07;
+}
+
+@media (max-width: 800px) {
+    .overloy-message {
+        width: 111.7em;
+        height: 75.2em;
+    }
+    .overloy-message-wrap {
+        font-size: 5px;
+        padding: 0 12em 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .overloy-message-wrap .title{
+        font-weight: 400;
+        line-height: 3.1em;
+        margin: 0;
+        font-family: 'Arial';
+        display: inline;
+    }
+
+    .overloy-message-wrap .desc {
+        line-height: 3.1em;
+        color: #000;
+        display: inline;
+    }
+
+    .overloy-message-wrap .title span {
+        font-size: 1.9em;
+    }
+
+    .overloy-message-wrap .desc span {
+        font-size: 1.9em;
+    }
+}
