@@ -25,6 +25,13 @@
     margin: 0 auto;
 }
 
+.logo {
+    width: 8.1em;
+    position: absolute;
+    left: 3%;
+    top: 8%;
+}
+
 .amobile {
     .app-container {
         height: auto;
@@ -73,15 +80,27 @@
     opacity: 1;
     visibility: visible;
 }
+.amobile.level-3 .MobileTurn{
+    opacity: 1;
+    visibility: visible;
+}
+.amobile.level-4 .MobileTurn{
+    opacity: 1;
+    visibility: visible;
+}
+.amobile.final .MobileTurn{
+    opacity: 1;
+    visibility: visible;
+}
 
 .cursor {
-    background: #000;
+    // background: #000;
+    // opacity: .4;
     width: 11em;
     height: 11em;
     position: absolute;
     bottom: 18em;
     left: 7em;
-    opacity: .4;
 
     img {
         width: 30em;

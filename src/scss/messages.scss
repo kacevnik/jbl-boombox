@@ -49,4 +49,80 @@
             width: 97.7em;
         }
     }
+    &#mess-2 {
+        left: 34%;
+        top: 27%;
+        width: 54.7em;
+
+        @media(max-width: 786px) {
+            padding: 6em;
+            width: 110.7em;
+        }
+    }
+    &#mess-3 {
+        top: 29%;
+        left: 69%;
+        width: 55em;
+
+        @media(max-width: 786px) {
+            top: auto;
+            left: 0;
+            bottom: 0;
+            width: 109em;
+        }
+    }
+    &#mess-5 {
+        left: 63%;
+        top: 67%;
+        width: 53em;
+
+        @media(max-width: 786px) {
+            left: 0;
+            top: 4%;
+            width: 97em;
+        }
+    }
+    &#mess-6 {
+        left: 50%;
+        top: 32%;
+        width: 55em;
+
+        @media(max-width: 786px) {
+            left: 0;
+            top: auto;
+            width: 107em;
+            bottom: 11%;
+        }
+    }
+    &#mess-7 {
+        width: 56em;
+        left: 58%;
+        top: 35%;
+
+        @media(max-width: 786px) {
+            width: 124em;
+            left: 0;
+            top: auto;
+            bottom: 0;
+        }
+    }
+    &#mess-8 {
+        left: 38%;
+        top: 52%;
+        width: 56em;
+
+        @media(max-width: 786px) {
+            left: 0;
+            top: auto;
+            width: 107em;
+        }
+    }
+
+    .w-close {
+        position: absolute;
+        right: -1.8em;
+        top: -1.8em;
+        width: 5em;
+        cursor: pointer;
+    }
 }

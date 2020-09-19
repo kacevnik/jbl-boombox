@@ -1,5 +1,5 @@
-.level2{
-    background: url(../img/level-2-bg.png)no-repeat center;
+.level3{
+    background: url(../img/level-3-bg.png)no-repeat center;
     background-size: contain;
     display: none;
 
@@ -8,55 +8,45 @@
     }
 
     .f-bg {
-        background: url(../img/ob.png)no-repeat;
+        background: url(../img/ob-3.png)no-repeat;
         background-size: contain;
     }
 
-    #search-2 {
+    #search-6 {
         position: absolute;
         width: 7.55em;
-        top: 46%;
-        left: 21%;
+        top: 55%;
+        left: 59%;
         &.searched {
             filter: drop-shadow(0 0 7px #FFF);
             z-index: 200;
         }
     }
 
-    #search-3 {
+    #search-7 {
         position: absolute;
-        left: 62.5%;
-        top: 30.5%;
-        width: 5em;
+        left: 47.3%;
+        top: 18.3%;
+        width: 7em;
         &.searched {
             filter: drop-shadow(0 0 7px #FFF);
             z-index: 200;
         }
     }
 
-    #boombox-3 {
-        display: none;
-        width: 31em;
+    #boombox-6 {
+        z-index: 200;
         position: absolute;
         right: 0;
-        top: 5em;
+        top: 8%;
+        width: 33em;
     }
-
-    #boombox-4 {
+    #boombox-7 {
         display: none;
         z-index: 200;
-        width: 31.1em;
-        top: 4.4em;
         position: absolute;
         right: 0;
-    }
-    
-    #boombox-5 {
-        z-index: 200;
-        display: none;
-        right: 0;
-        position: absolute;
-        width: 31em;
-        top: 5em;
+        top: 8%;
+        width: 33em;
     }
 }

@@ -1,0 +1,100 @@
+.final {
+    background: #FFF;
+    display: none;
+
+    .start-bg-left {
+        background: url(../img/start-bg-left.svg)no-repeat left center;
+        background-size: contain;
+    }
+    .start-bg-right {
+        background: url(../img/start-bg-right.svg)no-repeat right center;
+        background-size: contain;
+    }
+    .start-bg-center {
+        background: url(../img/final-bg-center.svg)no-repeat;
+        background-size: contain;
+        background-position: 54% center;
+        @media(max-width: 786px){
+            background: url(../img/final-bg-center.svg)no-repeat;
+            background-size: 95%;
+            background-position: 54% center;
+        }
+    }
+
+    .final-content {
+        width: 45%;
+        margin: 0 auto;
+
+        @media(max-width: 786px){
+            width: 65%;
+        }
+
+        .final-content-wrap {
+            padding: 23em 0 0 11em;
+
+            @media(max-width: 786px){
+                padding: 4em 0 0 0;
+            }
+        }
+    }
+
+    .final-img {
+        display: flex;
+        justify-content: center;
+
+        img {          
+            width: 48em;
+            margin: 0 0 2em 0;
+        }
+    }
+
+    .final-text {
+        .title {
+            font-family: 'Avant';
+            line-height: 3.6em;
+            font-weight: 600;
+
+            @media(max-width: 786px){
+                line-height: 4.8em;
+                padding: 0 0 5em;
+            }
+
+            span {
+                font-size: 2.4em;
+
+                @media(max-width: 786px){
+                    font-size: 3.6em;
+                }
+            }
+        }
+
+        .desc {
+            line-height: 3.1em;
+
+            @media(max-width: 786px){
+                line-height: 5.1em;
+            }
+
+            span {
+                font-size: 1.8em;
+
+                @media(max-width: 786px){
+                    font-size: 3.7em;
+                }
+            }
+        }
+    }
+
+    .logo {
+        position: absolute;
+        left: 28.5%;
+        top: 54%;
+        width: 8.2em;
+
+        @media(max-width: 786px){
+            left: 17.5%;
+            top: 13%;
+            width: 12.2em;
+        }
+    }
+}
