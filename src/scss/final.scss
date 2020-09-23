@@ -4,11 +4,11 @@
 
     .start-bg-left {
         background: url(../img/start-bg-left.svg)no-repeat left center;
-        background-size: contain;
+        background-size: 71em;
     }
     .start-bg-right {
         background: url(../img/start-bg-right.svg)no-repeat right center;
-        background-size: contain;
+        background-size: 32em;
     }
     .start-bg-center {
         background: url(../img/final-bg-center.svg)no-repeat;
@@ -26,11 +26,11 @@
         margin: 0 auto;
 
         @media(max-width: 786px){
-            width: 65%;
+            width: 74%;
         }
 
         .final-content-wrap {
-            padding: 23em 0 0 11em;
+            padding: 8em 0 0 11em;
 
             @media(max-width: 786px){
                 padding: 4em 0 0 0;
@@ -45,6 +45,10 @@
         img {          
             width: 48em;
             margin: 0 0 2em 0;
+
+            @media(max-width: 786px){
+                width: 37em;
+            }
         }
     }
 
@@ -85,16 +89,88 @@
         }
     }
 
-    .logo {
+    .logos {
         position: absolute;
         left: 28.5%;
-        top: 54%;
+        top: 40%;
         width: 8.2em;
 
         @media(max-width: 786px){
             left: 17.5%;
             top: 13%;
             width: 12.2em;
+        }
+    }
+
+    .final-buttons {
+        display: flex;
+        color: #FFF;
+        margin: 1em 0 0 0;
+        font-size: 2.5em;
+
+        a {
+            width: 50%;
+            text-align: center;
+            color: #FFF;
+            padding: 0.5em;
+            font-family: 'Avant';
+
+            &:first-child {
+                background: #FF3300;
+                margin: 0 0.5em 0 0;;
+            }
+
+            &:last-child {
+                background: #9999FF;
+            }
+
+            &:hover {
+                background: #000;
+            }
+        }
+
+        @media(max-width: 786px){
+            font-size: 4.5em;
+        }
+    }
+
+    .share-wrap {
+        width: 7.3em;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        a {
+            width: 7.3em;
+            height: 7.3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover {
+                background: #FF3300;
+            }
+        }
+
+        .share-vk{
+            background: #305C99;
+            img {
+                width: 5em;
+            }
+        }
+        .share-t{
+            background: #00CDFF;
+            img {
+                width: 5em;
+            }
+        }
+        .share-f{
+            background: #567CA4;
+            img {
+                width: 2em;
+            }
         }
     }
 }

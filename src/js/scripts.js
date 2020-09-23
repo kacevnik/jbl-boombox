@@ -7,9 +7,8 @@ const ObjData = {
     rem: window.innerWidth / 192,
 };
 
-const app = $('#App');
-
-app.fadeIn(300);
+const app = $('.App');
+app.fadeIn();
 function getRem() {
     if (window.innerWidth < window.innerHeight && window.innerWidth < 768) {
         ObjData.rem = window.innerWidth / 32;
@@ -29,11 +28,18 @@ function changeLevel(classAdd) {
     app.removeClass('start').removeClass('level-1').removeClass('level-2').removeClass('level-3').removeClass('level-4').addClass(classAdd);
 }
 
+const contObj= {
+    left: $('#app-container').offset().left,
+    right: $('#app-container').offset().left + $('#app-container').width(),
+    top: $('#app-container').offset().top,
+    bottom: $('#app-container').offset().top + $('#app-container').height(),
+}
+
 //Paralax
 $(document).on('mousemove', ['.StartPage', '.final'], function(e){
     if (!app.hasClass('amobile') && window.innerWidth > 768) {
-        $('.start-bg-left').css({backgroundPosition: ((e.pageX * -1 / 100) + 'px ' + (e.pageY * -1 / 100 +5 ) + 'px')});
-        $('.start-bg-right').css({backgroundPosition: ((e.pageX * -1 / 100 + (ObjData.rem * 159)) + 'px ' + (e.pageY * -1 / 100 +5 ) + 'px')});
+        $('.start-bg-left').css({backgroundPosition: ((e.pageX * -1 / 100) + 'px ' + (e.pageY * -1 / 90 ) + 'px')});
+        $('.start-bg-right').css({backgroundPosition: ((e.pageX * -1 / 100 + (ObjData.rem * 161)) + 'px ' + (e.pageY * -1 / 80 ) + 'px')});
     } else {
         $('.start-bg-left').css({backgroundPosition: 'center left'});
         $('.start-bg-right').css({backgroundPosition: 'center right'});
@@ -86,11 +92,25 @@ $(document).on('click', '.Overloy', function(e){
 $(document).on('mousemove', '.Level1', function(e){
     if (!app.hasClass('overloaded')){
         const cursor = $('#cursor-1');
+        const cursorImg = $('#cursor-1 img');
         cursor.css({left: e.pageX  - cursor.width() + cursor.width() / 2 + 'px', top: e.pageY - cursor.height() * 2 + 'px'});
         let cursorleft = cursor.offset().left;
         let cursorRight = cursor.offset().left + cursor.width();
         let cursorTop = cursor.offset().top;
         let cursorBottom = cursor.offset().top + cursor.height();
+
+        let cursorImgleft = cursorImg.offset().left;
+        let cursorImgRight = cursorImg.offset().left + cursorImg.width();
+        let cursorImgTop = cursorImg.offset().top;
+        let cursorImgBottom = cursorImg.offset().top + cursorImg.height();
+
+        if (cursorImgleft <= contObj.left || cursorImgRight >= contObj.right || cursorImgTop <= contObj.top || cursorImgBottom >= contObj.bottom){
+            cursor.css({opacity: 0});
+            $('.Level1 .app-container').css({'cursor': 'auto'});
+        } else {
+            cursor.css({opacity: 1});
+            $('.Level1 .app-container').css({'cursor': 'none'});
+        }
         const elem = $('#search-1');
         if (elem.length > 0) {
             let elemleft = elem.offset().left;
@@ -251,11 +271,26 @@ function move2(e) {
 $(document).on('mousemove', '.level2', function(e){
     if (!app.hasClass('overloaded')){
         const cursor = $('#cursor-2');
+        const cursorImg = $('#cursor-2 img');
         cursor.css({left: e.pageX  - cursor.width() + cursor.width() / 2 + 'px', top: e.pageY - cursor.height() * 2 + 'px'});
         let cursorleft = cursor.offset().left;
         let cursorRight = cursor.offset().left + cursor.width();
         let cursorTop = cursor.offset().top;
         let cursorBottom = cursor.offset().top + cursor.height();
+
+        let cursorImgleft = cursorImg.offset().left;
+        let cursorImgRight = cursorImg.offset().left + cursorImg.width();
+        let cursorImgTop = cursorImg.offset().top;
+        let cursorImgBottom = cursorImg.offset().top + cursorImg.height();
+
+        if (cursorImgleft <= contObj.left || cursorImgRight >= contObj.right || cursorImgTop <= contObj.top || cursorImgBottom >= contObj.bottom){
+            cursor.css({opacity: 0});
+            $('.level2 .app-container').css({'cursor': 'auto'});
+        } else {
+            cursor.css({opacity: 1});
+            $('.level2 .app-container').css({'cursor': 'none'});
+        }
+
         const elem1 = $('#search-2');
         const elem3 = $('#search-3');
         if (elem1.length > 0){
@@ -334,6 +369,7 @@ function move3(e) {
                 $('.level3 .Overloy').fadeIn(300);
                 cursor.css({zIndex: 200});
                 $('#boombox-6').hide();
+                $('#boombox-8').hide();
                 $('#boombox-7').show();
                 if (elem3.length > 0) {
                     $('#mess-5 .desc span').append('<div style="font-weight: bold; color: #FF2A07; text-align: center;">Теперь найди ручки</div>');
@@ -356,6 +392,9 @@ function move3(e) {
                 $('.level3 .Overloy .overloy-message').remove();
                 $('.level3 .Overloy').fadeIn(300);
                 cursor.css({zIndex: 200});
+                $('#boombox-6').hide();
+                $('#boombox-7').hide();
+                $('#boombox-8').show();
                 if (elem1.length > 0) {
                     $('#mess-6 .desc span').append('<div style="font-weight: bold; color: #FF2A07; text-align: center;">Теперь найди порты USB</div>');
                     $('#mess-6').append('<img class="w-close" src="public/img/close.png"/>');
@@ -372,11 +411,26 @@ function move3(e) {
 $(document).on('mousemove', '.level3', function(e){
     if (!app.hasClass('overloaded')){
         const cursor = $('#cursor-3');
+        const cursorImg = $('#cursor-3 img');
         cursor.css({left: e.pageX  - cursor.width() + cursor.width() / 2 + 'px', top: e.pageY - cursor.height() * 2 + 'px'});
         let cursorleft = cursor.offset().left;
         let cursorRight = cursor.offset().left + cursor.width();
         let cursorTop = cursor.offset().top;
         let cursorBottom = cursor.offset().top + cursor.height();
+
+        let cursorImgleft = cursorImg.offset().left;
+        let cursorImgRight = cursorImg.offset().left + cursorImg.width();
+        let cursorImgTop = cursorImg.offset().top;
+        let cursorImgBottom = cursorImg.offset().top + cursorImg.height();
+
+        if (cursorImgleft <= contObj.left || cursorImgRight >= contObj.right || cursorImgTop <= contObj.top || cursorImgBottom >= contObj.bottom){
+            cursor.css({opacity: 0});
+            $('.level3 .app-container').css({'cursor': 'auto'});
+        } else {
+            cursor.css({opacity: 1});
+            $('.level3 .app-container').css({'cursor': 'none'});
+        }
+
         const elem1 = $('#search-6');
         const elem3 = $('#search-7');
         if (elem1.length > 0){
@@ -455,6 +509,9 @@ function move4(e) {
                 $('.level4 .Overloy').fadeIn(300);
                 cursor.css({zIndex: 200});
                 $('#boombox-8').css({zIndex: 200});
+                $('#boombox-8').hide();
+                $('#boombox-10').hide();
+                $('#boombox-9').show();
                 if (elem3.length > 0) {
                     $('#mess-7 .desc span').append('<div style="font-weight: bold; color: #FF2A07; text-align: center;">Теперь найди динамики</div>');
                     $('#mess-7').append('<img class="w-close" src="public/img/close.png"/>');
@@ -476,8 +533,9 @@ function move4(e) {
                 $('.level4 .Overloy .overloy-message').remove();
                 $('.level4 .Overloy').fadeIn(300);
                 cursor.css({zIndex: 200});
-                $('#boombox-6').hide();
-                $('#boombox-9').show();
+                $('#boombox-8').hide();
+                $('#boombox-9').hide();
+                $('#boombox-10').show();
                 if (elem1.length > 0) {
                     $('#mess-8 .desc span').append('<div style="font-weight: bold; color: #FF2A07; text-align: center;">Теперь найди корпус</div>');
                     $('#mess-8').append('<img class="w-close" src="public/img/close.png"/>');
@@ -494,11 +552,26 @@ function move4(e) {
 $(document).on('mousemove', '.level4', function(e){
     if (!app.hasClass('overloaded')){
         const cursor = $('#cursor-4');
+        const cursorImg = $('#cursor-4 img');
         cursor.css({left: e.pageX  - cursor.width() + cursor.width() / 2 + 'px', top: e.pageY - cursor.height() * 2 + 'px'});
         let cursorleft = cursor.offset().left;
         let cursorRight = cursor.offset().left + cursor.width();
         let cursorTop = cursor.offset().top;
         let cursorBottom = cursor.offset().top + cursor.height();
+
+        let cursorImgleft = cursorImg.offset().left;
+        let cursorImgRight = cursorImg.offset().left + cursorImg.width();
+        let cursorImgTop = cursorImg.offset().top;
+        let cursorImgBottom = cursorImg.offset().top + cursorImg.height();
+
+        if (cursorImgleft <= contObj.left || cursorImgRight >= contObj.right || cursorImgTop <= contObj.top || cursorImgBottom >= contObj.bottom){
+            cursor.css({opacity: 0});
+            $('.level4 .app-container').css({'cursor': 'auto'});
+        } else {
+            cursor.css({opacity: 1});
+            $('.level4 .app-container').css({'cursor': 'none'});
+        }
+
         const elem1 = $('#search-8');
         const elem3 = $('#search-9');
         if (elem1.length > 0){
@@ -551,5 +624,46 @@ $(document).on('click', '.level4 #next-level.next', function(e){
     changeLevel(['final']);
     $('.level4').remove();
     $('.final').fadeIn(300);
+});
+
+let url = ''
+const urlProgect = 'https://medialeaks.ru/pomogi_zvezdam_na_avito/index.html'
+const title = 'Я помог с покупками через Авито. Теперь твоя очередь!'
+const desc = 'Я помог с покупками через Авито. Теперь твоя очередь!'
+const pimg = 'https://medialeaks.ru/wp-content/uploads/2020/04/.jpg'
+
+function shareVk() {
+    url = 'http://vkontakte.ru/share.php?';
+    url += 'url=' + encodeURIComponent(urlProgect);
+    url += '&title=' + encodeURIComponent(title);
+    url += '&description=' + encodeURIComponent(desc);
+    url += '&image=' + encodeURIComponent(pimg);
+    url += '&noparse=true';
+    window.open(url, '', 'toolbar=0,status=0,width=626,height=436');
+}
+
+function shareTwitter(){
+    url = 'http://twitter.com/share?';
+    url += 'text=' + encodeURIComponent(title);
+    url += '&url=' + encodeURIComponent(urlProgect);
+    url += '&counturl=' + encodeURIComponent(urlProgect);
+    window.open(url, '', 'toolbar=0,status=0,width=626,height=436');
+}
+
+function shareFacebook() {
+    url = 'http://www.facebook.com/sharer.php?s=100';
+    url += '&p[title]=' + encodeURIComponent(title);
+    url += '&p[summary]=' + encodeURIComponent(desc);
+    url += '&p[url]=' + encodeURIComponent(urlProgect);
+    url += '&p[images][0]=' + encodeURIComponent(pimg);
+    window.open(url, '', 'toolbar=0,status=0,width=626,height=436');
+}
+
+$(document).on('click', '.share-wrap a', function(){
+    if($(this).hasClass('share-vk')) shareVk();
+    if($(this).hasClass('share-t')) shareTwitter();
+    if($(this).hasClass('share-f')) shareFacebook();
+    
+    return false;
 });
 

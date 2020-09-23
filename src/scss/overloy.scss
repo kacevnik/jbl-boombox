@@ -20,8 +20,8 @@
 .overloy-message {
     background: url(../img/overloy-bg.png)no-repeat;
     position: absolute;
-    width: 75.7em;
-    height: 50.2em;
+    width: 83.7em;
+    height: 56.2em;
     background-size: contain;
     top: 50%;
     left: 50%;
@@ -31,11 +31,7 @@
 }
 
 .overloy-message-wrap {
-    padding: 11.7em 17em 4em;
-}
-
-.level2 .overloy-message-wrap {
-    padding: 11.7em 14em 4em;
+    padding: 12.7em 19em 4em;
 }
 
 .overloy-message-wrap .title{
@@ -46,16 +42,16 @@
 }
 
 .overloy-message-wrap .title span {
-    font-size: 2.2em;
+    font-size: 2.5em;
 }
 
 .overloy-message-wrap .desc {
-    line-height: 3.1em;
+    line-height: 3em;
     color: #808284;
 }
 
 .overloy-message-wrap .desc span {
-    font-size: 1.6em;
+    font-size: 2em;
 }
 
 .overloy-message-wrap .desc span strong {

@@ -11,7 +11,6 @@
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;
-    display: none;
 
     &.amobile {
         position: inherit;
@@ -20,12 +19,12 @@
 
 .app-container {
     position: relative;
-    height: 95em;
-    width: 169em;
+    height: 90em;
+    width: 160em;
     margin: 0 auto;
 }
 
-.logo {
+.logos {
     width: 8.1em;
     position: absolute;
     left: 3%;
@@ -93,6 +92,11 @@
     visibility: visible;
 }
 
+.searched {
+    box-shadow: -1px -1px 20px 13px #fff;
+    background: rgba(255, 255, 255, .8);
+}
+
 .cursor {
     // background: #000;
     // opacity: .4;
@@ -103,10 +107,10 @@
     left: 7em;
 
     img {
-        width: 30em;
+        width: 25em;
         position: absolute;
-        right: -4em;
-        top: -4em;
+        right: -3em;
+        top: -2.5em;
     }
 }
   

@@ -15,7 +15,7 @@
     #search-6 {
         position: absolute;
         width: 7.55em;
-        top: 55%;
+        top: 53%;
         left: 59%;
         &.searched {
             filter: drop-shadow(0 0 7px #FFF);
@@ -39,7 +39,7 @@
         position: absolute;
         right: 0;
         top: 8%;
-        width: 33em;
+        width: 26em;
     }
     #boombox-7 {
         display: none;
@@ -47,6 +47,14 @@
         position: absolute;
         right: 0;
         top: 8%;
-        width: 33em;
+        width: 26em;
+    }
+    #boombox-8 {
+        display: none;
+        z-index: 200;
+        position: absolute;
+        width: 27.9em;
+        right: -1em;
+        top: 6.2em;
     }
 }

@@ -36,7 +36,7 @@
 
     #boombox-3 {
         display: none;
-        width: 31em;
+        width: 28em;
         position: absolute;
         right: 0;
         top: 5em;
@@ -45,7 +45,7 @@
     #boombox-4 {
         display: none;
         z-index: 200;
-        width: 31.1em;
+        width: 28.1em;
         top: 4.4em;
         position: absolute;
         right: 0;
@@ -54,9 +54,9 @@
     #boombox-5 {
         z-index: 200;
         display: none;
-        right: 0;
+        right: -1.2em;
         position: absolute;
-        width: 31em;
+        width: 29em;
         top: 5em;
     }
 }

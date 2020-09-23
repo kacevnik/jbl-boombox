@@ -1,13 +1,26 @@
 .StartPage {
     background: #FFFF99;
+
+    .logos {
+        position: absolute;
+        width: 7.55em;
+    }
+}
+
+.amobile {
+    .StartPage {
+        .logos {
+            display: none;
+        }
+    }
 }
 .start-bg-left {
     background: url(../img/start-bg-left.svg)no-repeat left center;
-    background-size: contain;
+    background-size: 69em;
 }
 .start-bg-right {
     background: url(../img/start-bg-right.svg)no-repeat right center;
-    background-size: contain;
+    background-size: 32em;
 }
 .start-bg-center {
     background: url(../img/start-bg-center.png)no-repeat;
@@ -20,6 +33,7 @@
 .amobile .StartPage .start-bg-right {
     background: url(../img/start-mobile-bg.png)no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .amobile .StartPage .start-bg-center {
     background: url(../img/start-mobile-boll.png)no-repeat;
@@ -43,8 +57,8 @@
 }
 
 .start-content-top img {
-    width: 4em;
-    margin: 0 0 0 4em;
+    width: 4.5em;
+    margin: 0.1em 0 0 4em;
 }
 
 .amobile .start-content-top img {
@@ -53,7 +67,7 @@
 }
 
 .start-content {
-    width: 28%;
+    width: 27.5%;
     position: absolute;
     left: 56.3%;
     top: 14%;
@@ -87,7 +101,7 @@
 }
 
 .start-content p > span {
-    font-size: 2.1em;
+    font-size: 2.3em;
 }
 .amobile .start-content p > span {
     font-size: 1.6em;

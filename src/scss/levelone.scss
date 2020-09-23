@@ -2,9 +2,9 @@
     background: url(../img/level-1-bg.jpg)no-repeat center;
     background-size: contain;
 
-    .app-container {
-        cursor: none;
-    }
+    // .app-container.hide-cursor {
+    //     cursor: none;
+    // }
 
     #search-1 {
         position: absolute;
@@ -21,18 +21,19 @@
 
     #boombox-1 {
         display: none;
-        width: 31em;
+        width: 26em;
         position: absolute;
-        right: 0;
+        right: 1.3em;
         top: 5em;
     }
+
     #boombox-2 {
         z-index: 200;
         display: none;
         position: absolute;
-        right: 0;
-        top: 5em;
-        width: 35.3em;
+        right: -2em;
+        top: 4.1em;
+        width: 33em;
     }
 
     .f-bg {
