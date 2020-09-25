@@ -627,10 +627,10 @@ $(document).on('click', '.level4 #next-level.next', function(e){
 });
 
 let url = ''
-const urlProgect = 'https://medialeaks.ru/pomogi_zvezdam_na_avito/index.html'
-const title = 'Я помог с покупками через Авито. Теперь твоя очередь!'
-const desc = 'Я помог с покупками через Авито. Теперь твоя очередь!'
-const pimg = 'https://medialeaks.ru/wp-content/uploads/2020/04/.jpg'
+const urlProgect = 'https://medialeaks.ru/zaryadi_jizn_muzikoy/'
+const title = 'Игра. Заряди жизнь музыкой!'
+const desc = 'Что, если не музыка, способно привнести настроение в будни и праздники? Собери колонку и заряди жизнь четким звучанием и мощными басами в игре JBL и Medialeaks.'
+const pimg = 'https://medialeaks.ru/wp-content/uploads/2020/09/jbl.png'
 
 function shareVk() {
     url = 'http://vkontakte.ru/share.php?';
