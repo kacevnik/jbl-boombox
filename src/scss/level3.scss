@@ -37,7 +37,7 @@
     #boombox-6 {
         z-index: 200;
         position: absolute;
-        right: 0;
+        right: -1em;
         top: 8%;
         width: 26em;
     }
@@ -45,7 +45,7 @@
         display: none;
         z-index: 200;
         position: absolute;
-        right: 0;
+        right: 1em;
         top: 8%;
         width: 26em;
     }
@@ -54,7 +54,7 @@
         z-index: 200;
         position: absolute;
         width: 27.9em;
-        right: -1em;
+        right: -2em;
         top: 6.2em;
     }
 }

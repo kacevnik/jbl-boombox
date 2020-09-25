@@ -27,7 +27,7 @@
 .logos {
     width: 8.1em;
     position: absolute;
-    left: 3%;
+    left: 0;
     top: 8%;
 }
 
@@ -67,7 +67,7 @@
     opacity: 0;
     visibility: hidden;
     transition: all .2s ease;
-    z-index: 101;
+    z-index: 300;
 }
 
 .amobile.level-1 .MobileTurn{

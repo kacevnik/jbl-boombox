@@ -209,6 +209,7 @@ $(document).on('click', '.Level1 #next-level.next', function(e){
 
 function move2(e) {
     if (!app.hasClass('overloaded')){
+        $('.level2 .app-container').css({touchAction: 'none'});
         const cursor = $('#cursor-2');
         cursor.css({left: e.pageX  - cursor.width() + cursor.width() / 2 + 'px', top: e.pageY - cursor.height() * 2 + 'px'});
         let cursorleft = cursor.offset().left;
@@ -349,6 +350,7 @@ $(document).on('click', '.level2 #next-level.next', function(e){
 
 function move3(e) {
     if (!app.hasClass('overloaded')){
+        $('.level3 .app-container').css({touchAction: 'none'});
         const cursor = $('#cursor-3');
         cursor.css({left: e.pageX  - cursor.width() + cursor.width() / 2 + 'px', top: e.pageY - cursor.height() * 2 + 'px'});
         let cursorleft = cursor.offset().left;
@@ -489,6 +491,7 @@ $(document).on('click', '.level3 #next-level.next', function(e){
 
 function move4(e) {
     if (!app.hasClass('overloaded')){
+        $('.level2 .app-container').css({touchAction: 'none'});
         const cursor = $('#cursor-4');
         cursor.css({left: e.pageX  - cursor.width() + cursor.width() / 2 + 'px', top: e.pageY - cursor.height() * 2 + 'px'});
         let cursorleft = cursor.offset().left;
@@ -632,7 +635,7 @@ const title = 'Игра. Заряди жизнь музыкой!'
 const desc = 'Что, если не музыка, способно привнести настроение в будни и праздники? Собери колонку и заряди жизнь четким звучанием и мощными басами в игре JBL и Medialeaks.'
 const pimg = 'https://medialeaks.ru/wp-content/uploads/2020/09/jbl.png'
 
-function shareVk() {
+function shareVk2() {
     url = 'http://vkontakte.ru/share.php?';
     url += 'url=' + encodeURIComponent(urlProgect);
     url += '&title=' + encodeURIComponent(title);
@@ -642,7 +645,7 @@ function shareVk() {
     window.open(url, '', 'toolbar=0,status=0,width=626,height=436');
 }
 
-function shareTwitter(){
+function shareTwitter2(){
     url = 'http://twitter.com/share?';
     url += 'text=' + encodeURIComponent(title);
     url += '&url=' + encodeURIComponent(urlProgect);
@@ -650,7 +653,7 @@ function shareTwitter(){
     window.open(url, '', 'toolbar=0,status=0,width=626,height=436');
 }
 
-function shareFacebook() {
+function shareFacebook2() {
     url = 'http://www.facebook.com/sharer.php?s=100';
     url += '&p[title]=' + encodeURIComponent(title);
     url += '&p[summary]=' + encodeURIComponent(desc);
@@ -660,10 +663,23 @@ function shareFacebook() {
 }
 
 $(document).on('click', '.share-wrap a', function(){
-    if($(this).hasClass('share-vk')) shareVk();
-    if($(this).hasClass('share-t')) shareTwitter();
-    if($(this).hasClass('share-f')) shareFacebook();
+    if($(this).hasClass('share-vk')) shareVk2();
+    if($(this).hasClass('share-t')) shareTwitter2();
     
     return false;
 });
 
+$(document).on('click', '.share-f', function(){
+    FB.init({
+        appId      : '2798172497131966',
+        xfbml      : true,
+        version    : 'v2.8'
+    });
+      FB.ui({
+        method: 'feed',
+        name: "I got ! Which European are you destined to date?",
+        link: "https://medialeaks.ru/zaryadi_jizn_muzikoy/",
+        picture:'https://medialeaks.ru/wp-content/uploads/2020/09/jbl.png',
+        description: 'Title to show'
+      });
+})
