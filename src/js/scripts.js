@@ -683,3 +683,7 @@ $(document).on('click', '.share-f', function(){
         description: 'Title to show'
       });
 })
+
+$(document).on('click', '.logos', function(){
+    location.replace("https://bit.ly/30fO8zK");
+});
